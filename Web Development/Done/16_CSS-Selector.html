@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /*Element Selector*/
+        span{
+            background-color: yellow;
+        }
+        /*Class selector*/
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div > p{
+            color: white;
+            background-color: brown;
+        }
+        /* Descendent Selector */
+        div p{
+            color: rgb(64, 64, 9);
+        }
+
+        /* Universal */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:link{
+            color: rgb(10, 242, 10);
+        }
+        a:visited{
+            color: rgb(67, 67, 17);
+        }
+        a:hover{
+            background-color: lightsalmon;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <span>
+     A span {Element Selector}
+    </span>
+
+    <div class="red">
+        Class Selector
+    </div>
+
+    <div id="green">
+        ID Selector
+    </div>
+
+    <div>
+        <article>
+        <p>
+            It is not direct child so that direct child property will not be applicable. Descendent will be applicable.
+        </p>
+        </article>
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel perspiciatis neque eveniet?
+        </p>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+
+    <main>
+        <p>
+            First Child
+        </p>
+        <p>
+            Second Child
+        </p>
+    </main>
+</body>
+</html>
