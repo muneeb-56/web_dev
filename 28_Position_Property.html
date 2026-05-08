@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+
+        /* ~ position: relative → keeps the element in the normal document flow, and offsets it from its original position.
+        
+        ~ position: absolute → removes the element from the normal flow, and positions it relative to the nearest positioned parent (a parent with position: relative, absolute, fixed, or sticky). */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            height: 50vh;
+            width: 60vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1{
+            background-color: aqua;
+            /* position: relative;
+            z-index: 1; */
+
+            /* position: sticky;  
+            height: 90px;
+            width: 400px;
+            margin: auto; */
+            
+            position: absolute;
+            top: 0%;
+        }
+        .box2{
+            background-color: blueviolet;
+            /* position: relative;
+            top: -90px;
+            left: 45px; */
+        }
+        .box3{
+            background-color: brown;
+            position: fixed;
+            left: 8vw;
+            bottom: 0px;
+            height: 100px;
+        }
+        .box4{
+            background-color: coral;
+            
+        }
+
+        .parent{
+            padding: 40px;
+            margin: 30px;
+            border: 2px solid black;
+            /* position: absolute; */
+
+
+            /* Exception ⚠️ */
+            /* Transform, filter & Perspective Properties will also be considered positioned. */
+            /* transform: translateX(0); */
+            filter: blur(0px);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+</html>

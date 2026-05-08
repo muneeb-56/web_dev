@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style>
+        :root {
+            --color: blue;
+            --seccolor: rgba(17, 17, 194, 0.4);
+            --text1: white;
+            --bordercol: rgb(255, 0, 0);
+            --navpad: 10px;
+            --defopac: 0.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            padding: var(--navpad);
+        }
+
+        ul {
+            background-color: var(--color);
+            opacity: var(--defopac);
+            color: var(--text1);
+            display: flex;
+            gap: 10px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+            border: 2px solid var(--bordercol);
+        }
+
+        ul li:first-child {
+            --color: green;
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor, aqua);
+            /* IF variable not found then 'Aqua' */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta et, culpa architecto eius rem nostrum
+            incidunt, debitis ut laudantium sequi cumque libero aut dolor similique! Ipsam nam reprehenderit eius
+            inventore rem quaerat impedit fuga cum, commodi provident nesciunt repellendus distinctio tempora ipsum sunt
+            nulla saepe facere sequi similique soluta quibusdam. Molestias reprehenderit harum soluta? Harum, molestias.
+        </p>
+    </div>
+</body>
+
+</html>

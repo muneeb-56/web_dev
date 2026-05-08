@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+
+        .box{
+            border: 1px solid black;
+            /* box-shadow: 5px 5px 10px red; */
+            box-shadow: inset 5px 5px 10px -3px red;
+        }
+        .textshadow{
+            margin-top: 10px;
+            text-shadow: -1px 1px 2px green;
+            border: 2px solid red;
+            outline:  2px solid blue;
+            padding: 5px;
+            border-radius: 20px 20px 0px 0px; /*Outline follows the border radius*/
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        BOX
+    </div>
+    <div class="textshadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui quia unde ullam laudantium libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas quos dolore vitae deserunt.
+    </div>
+</body>
+</html>

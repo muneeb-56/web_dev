@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        div{
+            color: white;
+            font-size: larger;
+        }
+
+        .boxes{
+            display: flex;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+
+        @media(max-width:320px){
+            body{
+                background-color: aqua;
+            }
+            div{
+                color:black
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        It is red.
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
