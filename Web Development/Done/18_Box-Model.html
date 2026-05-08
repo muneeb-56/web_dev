@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: brown;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 25px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        /* Margin Collapse Concept */
+        .box2{
+            color: green;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 25px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box box1">
+        It is Box1
+    </div>
+    <div class="box box2">
+        It is Box2
+    </div>
+</body>
+</html>

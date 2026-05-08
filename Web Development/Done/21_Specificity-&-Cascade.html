@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Specifcity: 1 */
+        h1{
+            color: purple;
+        }
+        
+        /* Specifcity: 10  (if same then position matters)*/
+       
+        /* .red{
+            color: red !important;
+        } */
+        /* Important have top priority*/
+
+        
+        h1.blue{    /*Here: 1+10 so applicable*/
+            color: blue;
+        }
+
+        .yellow{
+            color: yellow ;
+        }
+        
+        /* Specifcity: 10 */
+        [data-x="a"]{
+            color: aquamarine;
+        }
+
+        /* Specifcity: 100 */
+        /* #head{
+            color: green;
+        }
+         */
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="red yellow blue" id="head" data-x="a">CSS Specificity</h1>
+    
+</body>
+</html>

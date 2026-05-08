@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forum & Inputs</h1>
+    <form method="POST">
+        
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+</div>
+
+<div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+</div>
+
+        <div>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="follow" id="follow" value="yes">
+            <label for="follow">Follow our Forum</label>
+        </div>
+        
+        <div> 
+            <label for="description">Enter your description here...</label>
+            <textarea name="description" id="description" rows="4" cols="40" autofocus>     
+            </textarea>
+        </div>
+
+        <div>
+            <label for="colour">Colour:</label>
+            <select name="colour" id="colour">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+    </form>
+
+    <form action="/submit">
+        <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+     <input type="submit" value="Submit" required>
+</form>
+
+<br><br><br>
+<form action="/submit">
+<textarea name="desc" id="desc" rows="4" cols="30">Enter description</textarea>
+<select name="way" id="way">
+<option value="forward">Forward</option>
+<option value="middle">Middle</option>
+<option value="backward">Backward</option>
+</select>
+    <input type="submit" value="submit" required>
+</form>
+
+</body>
+</html>
