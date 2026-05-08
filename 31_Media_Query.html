@@ -6,10 +6,10 @@
     <title>Media Query</title>
     <style>
         body{
-            background-color: red;
+            background-color: rgb(37, 169, 121);
         }
         div{
-            color: white;
+            color: rgb(242, 255, 0);
             font-size: larger;
         }
 
@@ -17,23 +17,28 @@
             display: flex;
         }
         .box{
-            background-color: aquamarine;
+            background-color: rgb(9, 0, 173);
             width: 200px;
             height: 200px;
             margin: 5px;
-            border: 2px solid black;
+            border: 2px solid rgb(136, 6, 6);
             border-radius: 30px;
         }
 
         @media(max-width:320px){
             body{
+                
                 background-color: aqua;
             }
             div{
                 color:black
             }
             .boxes{
+                
                 flex-direction: column;
+            }
+            .box{
+                background-color: blanchedalmond;
             }
         }
 
