@@ -25,6 +25,10 @@
             border-radius: 30px;
         }
 
+        /* @media not|only mediatype and (expression){
+        CSS-Code 
+        }  */
+
         @media(max-width:320px){
             body{
                 
@@ -42,6 +46,17 @@
             }
         }
 
+        @media(orientation: landscape){
+            body{
+            background-color: beige;
+            }
+            .boxes{
+                flex-direction: row;
+            }
+            .box{
+                background-color: black;
+            }
+        }
     </style>
 </head>
 <body>
