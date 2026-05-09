@@ -6,10 +6,10 @@
     <title>Media Query</title>
     <style>
         body{
-            background-color: rgb(37, 169, 121);
+            background-color: rgb(5, 0, 163);
         }
         div{
-            color: rgb(242, 255, 0);
+            color: rgb(255, 255, 255);
             font-size: larger;
         }
 
@@ -17,11 +17,11 @@
             display: flex;
         }
         .box{
-            background-color: rgb(9, 0, 173);
+            background-color: rgb(4, 0, 80);
             width: 200px;
             height: 200px;
             margin: 5px;
-            border: 2px solid rgb(136, 6, 6);
+            border: 2px solid rgb(255, 255, 255);
             border-radius: 30px;
         }
 
@@ -32,23 +32,24 @@
         @media(max-width:320px){
             body{
                 
-                background-color: aqua;
+                background-color: rgb(0, 143, 143);
             }
             div{
-                color:black
+                color:rgb(0, 0, 0)
             }
             .boxes{
                 
                 flex-direction: column;
             }
             .box{
-                background-color: blanchedalmond;
+                background-color: rgb(0, 183, 183);
             }
         }
 
         @media(orientation: landscape){
             body{
             background-color: beige;
+            color: black;
             }
             .boxes{
                 flex-direction: row;
@@ -62,7 +63,7 @@
 <body>
 
     <div>
-        It is red.
+        Media Query...
     </div>
 
     <div class="boxes">
