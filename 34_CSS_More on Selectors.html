@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors More</title>
+
+    <style>
+        .boxes *{   /*Select everything in boxes*/
+            border: 2px solid black;
+        }
+
+        .box:first-line{
+            color: red;
+        }
+
+        [data="temporary"]{
+            padding-top: 30px;
+        }
+
+        .box:nth-child(odd){
+            background-color: beige;
+        }
+        
+        .box:nth-last-child(2){
+            background-color: rgb(181, 181, 181);
+        }
+
+        .boxes::before{
+            content: "My Web Development Journey.";
+            padding: 10px;
+        }
+
+        .boxes::after{
+            content: "After.";
+            font-size: large;
+            color: blue;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color: purple;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: green;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consectetur nobis rerum minima voluptates fuga earum, maiores minus quisquam laudantium repudiandae quis nesciunt totam asperiores mollitia commodi, nihil officia natus illo quo. Maiores accusantium consequuntur quas id nemo iusto ducimus magni delectus repudiandae molestias, nulla aperiam similique aliquid corporis error at possimus quia voluptatum ex voluptas!</div>
+        <div data="temporary" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quos esse, fuga placeat eos vero est iusto blanditiis quibusdam error porro suscipit omnis!</div>
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptas officiis odio? Alias praesentium at illum quaerat impedit sint?</div>
+    </div>
+
+z    <input type="text" placeholder="Type name here...">
+</body>
+</html>
