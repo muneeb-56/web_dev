@@ -10,19 +10,23 @@
             padding: 0;
             margin: 0;
         }
+        body{
+            overflow-x: hidden;
+        }
         header{
             width: 100vw;
             height: 12vh;
-            background-color: rgb(33, 33, 33);
             display: flex;
             justify-content: center;
-            align-items: center;
-            
+            background-color: rgb(33, 33, 33);
+            align-items: center;    
+        }
+        nav{
+            position: sticky;
         }
         nav ul{
             display: flex;
             gap: 30px;
-            
         }
         nav ul li{
             list-style: none;     
@@ -48,18 +52,44 @@
         }
         .container{
             margin: 30px;
+            padding: 10px;
             background-color: blanchedalmond;
             border: 2px solid rgb(33, 33, 33);
-            border-radius: 10%;
-            height: 65vh;
-        }
+            border-radius: 20px;
+            height: 70vh;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }  
         .box{
             background-color: azure;
             border: 1.5px solid rgb(33,33,33);
-            border-radius: 10%;
-            width: 50vw;
+            border-radius: 20px;
+            width: 40vw;
+            height: 40vh;
         }
-
+        .text{
+            border: 1.5px solid black;
+            background-color: rgb(225, 255, 245);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 30px;
+            text-align: center;
+        }
+        footer{
+            position: relative;
+            background-color: black;
+            bottom: 0%;
+            color: white;
+            font-size: 18px;
+            width: 100vw;
+            height: 40vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
